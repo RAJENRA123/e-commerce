@@ -12,9 +12,8 @@ public class ECommerceApplication {
 
 
 		SpringApplication.run(ECommerceApplication.class, args);
-		System.out.println("running successful");
+		System.out.println("Project running successful");
 	}
 
 
 }
-sout
