@@ -12,7 +12,7 @@ public class ECommerceApplication {
 
 
 		SpringApplication.run(ECommerceApplication.class, args);
-		System.out.println("running up");
+		System.out.println("running successful");
 	}
 
 
