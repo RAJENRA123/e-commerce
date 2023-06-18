@@ -15,20 +15,18 @@ import java.util.Date;
 @Entity
 @Table(name = "products")
 public class Product {
+
     @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private String productId;
 
-    @Column(name = "product_title",length = 60, nullable = false)
     private String title;
 
-    @Column(name = "category_desc",length = 50)
+    @Column(length = 10000)
     private String description;
 
     private double price;
 
-    @Column(length = 10000)
+
     private double discountedPrice;
 
     private Integer quantity;
@@ -39,5 +37,5 @@ public class Product {
 
     private boolean stock;
 
-
+    private String productImageName;
 }
