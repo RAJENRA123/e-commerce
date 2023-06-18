@@ -19,7 +19,6 @@ public class ProductDto {
 
     private double price;
 
-
     private double discountedPrice;
 
     private Integer quantity;
@@ -29,5 +28,7 @@ public class ProductDto {
     private boolean live;
 
     private boolean stock;
+
+    private String productImageName;
 
 }
