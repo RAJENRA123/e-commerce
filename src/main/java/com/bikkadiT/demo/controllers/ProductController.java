@@ -148,7 +148,7 @@ public class ProductController {
     public void serveProductImage(@PathVariable String productId, HttpServletResponse response) throws IOException, IOException {
         ProductDto productDto = productService.get(productId);
         InputStream resource = fileService.getResource(imagePath);
-        resource.setContentType(MediaType.IMAGE_JPEG_VALUE);
+//        resource.setContentType(MediaType.IMAGE_JPEG_VALUE);
         StreamUtils.copy(resource,response.getOutputStream());
 //
     }
