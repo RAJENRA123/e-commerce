@@ -54,6 +54,7 @@ public class ProductServiceImpl implements ProductService {
         product.setQuantity(productDto.getQuantity());
         product.setLive(productDto.isLive());
         product.setStock(productDto.isStock());
+        product.setProductImageName(productDto.getProductImageName());
         //save the entity
         Product updatedProduct = productRepository.save(product);
         log.info("Completed dao call for Update the product details with productId:{}", productId);
