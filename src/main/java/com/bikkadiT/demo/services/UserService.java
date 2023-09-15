@@ -2,11 +2,13 @@ package com.bikkadiT.demo.services;
 
 import com.bikkadiT.demo.dtos.PageableResponse;
 import com.bikkadiT.demo.dtos.UserDto;
-import com.bikkadiT.demo.entyties.User;
 
 import java.util.List;
 
 public interface UserService {
+    static UserDto get(Object userId) {
+        return null;
+    }
 
     //create
 

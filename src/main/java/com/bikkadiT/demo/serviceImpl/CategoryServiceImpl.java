@@ -2,6 +2,7 @@ package com.bikkadiT.demo.serviceImpl;
 
 import com.bikkadiT.demo.dtos.CategoryDto;
 import com.bikkadiT.demo.dtos.PageableResponse;
+import com.bikkadiT.demo.dtos.UserDto;
 import com.bikkadiT.demo.entyties.Category;
 import com.bikkadiT.demo.exceptions.ResourceNotFoundException;
 import com.bikkadiT.demo.helper.Helper;
@@ -75,5 +76,10 @@ public class CategoryServiceImpl implements CategoryService{
         log.info("Completed dao call for get category details");
 
         return mapper.map(category,CategoryDto.class);
+    }
+
+    @Override
+    public UserDto updateCategory(UserDto userDto, Integer userId) {
+        return null;
     }
 }

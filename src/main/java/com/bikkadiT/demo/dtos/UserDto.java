@@ -33,4 +33,8 @@ public class  UserDto {
 
    @ImageNameValid
     private String imageName;
+
+
+    public void setUserImageName(String fileName) {
+    }
 }

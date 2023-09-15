@@ -144,11 +144,12 @@ public class ProductController {
         return new ResponseEntity<>(response, HttpStatus.OK);
 
     }
-    @GetMapping(value = "/image/{productId}")
+    @GetMapping("/image/{productId}")
     public void serveProductImage(@PathVariable String productId, HttpServletResponse response) throws IOException, IOException {
         ProductDto productDto = productService.get(productId);
         InputStream resource = fileService.getResource(imagePath);
-//        resource.setContentType(MediaType.IMAGE_JPEG_VALUE);
+
+        response.setContentType(MediaType.IMAGE_JPEG_VALUE);
         StreamUtils.copy(resource,response.getOutputStream());
 //
     }

@@ -2,6 +2,7 @@ package com.bikkadiT.demo.services;
 
 import com.bikkadiT.demo.dtos.CategoryDto;
 import com.bikkadiT.demo.dtos.PageableResponse;
+import com.bikkadiT.demo.dtos.UserDto;
 
 public interface CategoryService {
     //create
@@ -20,6 +21,8 @@ public interface CategoryService {
 
     //get single category detaill
     CategoryDto get(Integer categoryId);
+
+    UserDto updateCategory(UserDto userDto, Integer userId);
 
     //search
 

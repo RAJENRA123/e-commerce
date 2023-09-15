@@ -15,7 +15,7 @@ public class FileService {
 
 
     public InputStream getResource(String imagePath) {
-        return InputStream.nullInputStream();
+        return  InputStream.nullInputStream();
     }
 }
 
